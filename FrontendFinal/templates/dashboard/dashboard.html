@@ -1,0 +1,152 @@
+<!Doctype HTML>
+<html>
+<head>
+	<title></title>
+	<!-- <link rel="stylesheet" href="FrontendFinal/css/dashboard.css" type="text/css"/> -->
+    <link rel="stylesheet" href="../../css/dashboard.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+
+<body>
+<!-- Sidebar -->
+	<div id="mySidenav" class="sidenav">
+    <p class="logo"><span>R</span>ental Zone</p>
+    <a href="#" class="icon-a"><i class="fa fa-dashboard icons"></i> &nbsp;&nbsp;Dashboard</a>
+    <a href="#"class="icon-a"><i class="fa fa-users icons"></i> &nbsp;&nbsp;Users</a>
+    <a href="#"class="icon-a"><i class="fa fa-list icons"></i> &nbsp;&nbsp;Rooms</a>
+    <a href="#"class="icon-a"><i class="fa fa-shopping-bag icons"></i> &nbsp;&nbsp;Bookings</a>
+    <a href="#"class="icon-a"><i class="fa fa-tasks icons"></i> &nbsp;&nbsp;Reviews</a>
+    <a href="#"class="icon-a"><i class="fa fa-user icons"></i> &nbsp;&nbsp;Log Out</a>
+
+</div>
+<div id="main">
+
+	<div class="head">
+		<div class="col-div-6">
+<span style="font-size:30px;cursor:pointer; color: rgb(0, 0, 0);" class="nav"  >&#9776; Dashboard</span>
+<span style="font-size:30px;cursor:pointer; color: rgb(0, 0, 0);" class="nav2"  >&#9776; Dashboard</span>
+</div>
+	
+	<div class="col-div-6">
+	
+</div>
+	<div class="clearfix"></div>
+</div>
+
+	<div class="clearfix"></div>
+	<br/>
+	
+	<div class="col-div-3">
+		<div class="box">
+			<p>6<br/><span>Users</span></p>
+			<i class="fa fa-users box-icon"></i>
+		</div>
+	</div>
+	<div class="col-div-3">
+		<div class="box">
+			<p>88<br/><span>Rooms</span></p>
+			<i class="fa fa-list box-icon"></i>
+		</div>
+	</div>
+	<div class="col-div-3">
+		<div class="box">
+			<p>99<br/><span>Bookings</span></p>
+			<i class="fa fa-tasks box-icon"></i>
+		</div>
+	</div>
+	<div class="col-div-3">
+		<div class="box">
+			<p>78<br/><span>Reviews</span></p>
+			<i class="fa fa-tasks box-icon"></i>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<br/><br/>
+	<div class="col-div-8">
+		<div class="box-8">
+		<div class="content-box">
+			<p>Recently Viewed Customers <span>View All</span></p>
+			<br/>
+			
+  <table class="appointments">
+    <thead>
+        <td>Full Name</td>
+        <td>Type</td>
+        <td>UserName</td>
+        <td>Actions</td>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Jenish Neupane</td>
+            <td>Customer</td>
+            <td>Jenish</td>
+            <td>
+                <i class="far fa-eye"></i>
+                <i class="far fa-edit"></i>
+                <i class="far fa-trash-alt"></i>
+            </td>
+        </tr>
+        <tr>
+            <td>Angel Rana</td>
+            <td>Room Owner</td>
+            <td>Anzel</td>
+            <td>
+                <i class="far fa-eye"></i>
+                <i class="far fa-edit"></i>
+                <i class="far fa-trash-alt"></i>
+            </td>
+        </tr>
+        <tr>
+            <td>Kapil Bhandari</td>
+            <td>Room Owner</td>
+            <td>Kaps</td>
+            <td>
+                <i class="far fa-eye"></i>
+                <i class="far fa-edit"></i>
+                <i class="far fa-trash-alt"></i>
+                </td>
+                </tr>
+                </tbody>
+                </table>
+                </div>
+                </div>
+                </div>
+                </div>
+                
+  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+  $(".nav").click(function(){
+    $("#mySidenav").css('width','70px');
+    $("#main").css('margin-left','70px');
+    $(".logo").css('visibility', 'hidden');
+    $(".logo span").css('visibility', 'visible');
+     $(".logo span").css('margin-left', '-10px');
+     $(".icon-a").css('visibility', 'hidden');
+     $(".icons").css('visibility', 'visible');
+     $(".icons").css('margin-left', '-8px');
+      $(".nav").css('display','none');
+      $(".nav2").css('display','block');
+  });
+
+$(".nav2").click(function(){
+    $("#mySidenav").css('width','300px');
+    $("#main").css('margin-left','300px');
+    $(".logo").css('visibility', 'visible');
+     $(".icon-a").css('visibility', 'visible');
+     $(".icons").css('visibility', 'visible');
+     $(".nav").css('display','block');
+      $(".nav2").css('display','none');
+ });
+
+</script>
+
+</body>
+
+
+</html>

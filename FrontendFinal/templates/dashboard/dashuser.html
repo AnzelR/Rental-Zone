@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/user.css">
+    <script src="https://kit.fontawesome.com/f815347d2a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <p class="logo"><span>R</span>ental Zone</p>
+        <a href="#" class="icon-a"><i class="fa fa-dashboard icons"></i> &nbsp;&nbsp;Dashboard</a>
+        <a href="#"class="icon-a"><i class="fa fa-users icons"></i> &nbsp;&nbsp;Users</a>
+        <a href="#"class="icon-a"><i class="fa fa-list icons"></i> &nbsp;&nbsp;Rooms</a>
+        <a href="#"class="icon-a"><i class="fa fa-shopping-bag icons"></i> &nbsp;&nbsp;Bookings</a>
+        <a href="#"class="icon-a"><i class="fa fa-tasks icons"></i> &nbsp;&nbsp;Reviews</a>
+        <a href="#"class="icon-a"><i class="fa fa-user icons"></i> &nbsp;&nbsp;Log Out</a>
+    
+    </div>
+    <div id="main">
+    
+      <div class="head">
+          <div class="col-div-6">
+    <span style="font-size:30px;cursor:pointer; color: rgb(0, 0, 0);" class="nav"  >&#9776; Users</span>
+    <span style="font-size:30px;cursor:pointer; color: rgb(0, 0, 0);" class="nav2"  >&#9776; Users</span>
+    </div>
+    <br>
+    <br>
+    <br><br>
+    <div class="col-div-8">
+    <div class="box-8">
+    <div class="content-box">
+    <p><span>Add</span></p>
+    <br><br>
+    <table class="appointments">
+      <thead>
+        <td>User ID</td>
+        <td>Username</td>
+        <td>Address</td>
+        <td>User type</td>
+        <td>Phone</td>
+        <td>Update</td>
+        <td>Delete</td>
+      </thead>
+      <tbody>
+          <tr>
+              <td>1</td>
+              <td>Jenish Neupane</td>
+              <td>Customer</td>
+              <td>3</td>
+              <td>9818369941</td>
+              <td><i class="far fa-edit"></i></td>
+              <td><i class="far fa-trash-alt"></i></td>
+             
+              
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Angel Rana</td>
+              <td>Room Owner</td>
+              <td>2</td>
+              <td></td>
+              <td><i class="far fa-edit"></i></td>
+             <td><i class="far fa-trash-alt"></i></td>
+             
+           
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Kapil Bhandari</td>
+              <td>Room Owner</td>
+              <td>5</td>
+              <td></td>
+              <td><i class="far fa-edit"></i></td>
+              <td><i class="far fa-trash-alt"></i></td>
+            
+              </tr>
+              </tbody>
+              </table>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+          
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    
+    $(".nav").click(function(){
+      $("#mySidenav").css('width','70px');
+      $("#main").css('margin-left','70px');
+      $(".logo").css('visibility', 'hidden');
+      $(".logo span").css('visibility', 'visible');
+       $(".logo span").css('margin-left', '-10px');
+       $(".icon-a").css('visibility', 'hidden');
+       $(".icons").css('visibility', 'visible');
+       $(".icons").css('margin-left', '-8px');
+        $(".nav").css('display','none');
+        $(".nav2").css('display','block');
+    });
+    
+    $(".nav2").click(function(){
+      $("#mySidenav").css('width','300px');
+      $("#main").css('margin-left','300px');
+      $(".logo").css('visibility', 'visible');
+       $(".icon-a").css('visibility', 'visible');
+       $(".icons").css('visibility', 'visible');
+       $(".nav").css('display','block');
+        $(".nav2").css('display','none');
+    });
+    
+    </script>
+
+            <!-- <table class="table-content">
+                <tr>
+                    <th>User ID</th>
+                    <th>Username</th>
+                    <th>Address</th>
+                    <th>usertype</th>
+                    <th>phone</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>admin</td>
+                    <td>Kathmandu</td>
+                    <td>rentalAdmin</td>
+                    <td>9819055444</td>
+                    <td><button type="submit" class="userbtn"><a href="#"><i
+                                    class="fa-regular fa-pen-to-square"></i></a></button></td>
+                    <td><button type="submit" class="userbtn"><a href="#"><i class="fa-solid fa-trash-can"></i></a></button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>elon</td>
+                    <td>Kathmandu</td>
+                    <td>roomowner</td>
+                    <td>9819055244</td>
+                    <td><button type="submit" class="userbtn"><a href="#"><i
+                                    class="fa-regular fa-pen-to-square"></i></a></button></td>
+                    <td><button type="submit" class="userbtn"><a href="#"><i class="fa-solid fa-trash-can"></i></a></button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>bill</td>
+                    <td>Kathmandu</td>
+                    <td>customer</td>
+                    <td>9819055744</td>
+                    <td><button type="submit" class="userbtn"><a href="#"><i
+                                    class="fa-regular fa-pen-to-square"></i></a></button></td>
+                    <td><button type="submit" class="userbtn"><a href="#"><i class="fa-solid fa-trash-can"></i></a></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>bill</td>
+                    <td>Kathmandu</td>
+                    <td>customer</td>
+                    <td>9819055744</td>
+                    <td><button type="submit" class="userbtn"><a href="#"><i
+                                    class="fa-regular fa-pen-to-square"></i></a></button></td>
+                    <td><button type="submit" class="userbtn"><a href="#"><i class="fa-solid fa-trash-can"></i></a></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </main>
+
+    </div> -->
+</body>
+
+</html>
